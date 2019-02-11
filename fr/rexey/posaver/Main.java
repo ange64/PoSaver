@@ -16,7 +16,6 @@ public class Main extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         super.onEnable();
-        System.out.println("la");
         positions = new HashMap<>();
         for (String key : this.getConfig().getKeys(false)) {
             positions.put(key, new IntPos(this.getConfig().getString(key)));
