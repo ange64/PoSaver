@@ -20,7 +20,6 @@ public class Main extends JavaPlugin implements Listener {
         for (String key : this.getConfig().getKeys(false)) {
             positions.put(key, new IntPos(this.getConfig().getString(key)));
         }
-
     }
 
     @Override
@@ -29,7 +28,9 @@ public class Main extends JavaPlugin implements Listener {
         for (String s : positions.keySet()) {
             this.getConfig().set(s, positions.get(s).toString());
         }
+        saveConfig();
     }
+
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
