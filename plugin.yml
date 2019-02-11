@@ -1,0 +1,18 @@
+name: posaver
+version: 1.0
+author: author
+main: fr.rexey.posaver.Main
+api-version: 1.13
+commands:
+  savePosOf:
+    description: saves the current pos to the tag in argument
+    usage: /savePosOf
+  savePosFromChat:
+    description: saves the pos entered in the chat
+    usage: /savePosFromChat
+  showPosOf:
+    description: shows the pos of the tag in argument
+    usage: /showPosOf
+  listPos:
+    description: list all saved poses and their tag
+    usage: /listPos
